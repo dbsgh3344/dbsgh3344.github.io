@@ -9,12 +9,30 @@ layout: default
 {{ content }}
 
 {%- if site.posts.size > 0 -%}
-  <ul class="posts">
-    <li>
-      <h1 id="posts-label">posts</h1>
-    </li>
+<ul class="introduce">
+  <div>
+  <!-- my about 쓰는 곳 -->
+  <h1>About</h1>
+  <h1 id="about-text" >배우는걸 즐기며 성장해나가는 Data Scientist 될 송윤호입니다.  </h1> 
+   <h1 id='about-text'>항상 근본적인 원인을 파악하고 문제해결을 하는 것을 삶의 모토로 삼고 있습니다. </h1>
+   <!-- <h1 id = 'about-text'> </h1>  -->
+  </div>
 
-    {%- for post in site.posts -%}
+  <div>
+  <h2>Skill</h2>
+  <h2 id="about-text">Python</h2>
+  <h2 id="about-text">NLP</h2> 
+  <h2 id="about-text">Understanding Deep-learning</h2>
+  </div> 
+</ul>  
+
+
+  <ul class="posts">
+    <!-- <li>
+      <h1 id="posts-label">posts</h1>
+    </li> -->
+
+    <!-- {%- for post in site.posts -%}
       <li>
         {%- assign date_format = site.plainwhite.date_format | default: "%b %-d, %Y" -%}
         <a class="post-link" href="{{ post.url | relative_url }}">
@@ -36,7 +54,25 @@ layout: default
           {%- endif -%}
         </div>
       </li>
-    {%- endfor -%}
+    {%- endfor -%} -->
+    <h1>Portpolio</h1>
+    <li>
+          <h2 class="post-title">Multi Label Classification</h2>
+        </a>
+        <div class="post-meta">
+          <ul class="post-categories"><li>Python</li><li>Neural Network</li><li>Multi label</li></ul>
+        </div>
+        <div><p>Auto Labeling은 레이블이 되어있지 않은 데이터에 레이블링을 해주는 기법입니다.</p>
+          <p>소수의 데이터에 직접 레이블링을 해주고 기본 Multi Layer Perceptron Model을 만들어서 다수의 데이터를 학습시켰습니다.  </p>
+          <p>이 과정에서 하나의 레이블이 아닌 복수의 레이블을 할당할 수 있는 Multi Label Classification을 사용하였습니다. </p>
+        </div>
+        <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/multi_label_classification.ipynb">Multi Label github</a>
+
+      </li>
+
+
+
+
   </ul>
 
   <!-- <p class="feed-subscribe"><svg class="svg-icon orange">
