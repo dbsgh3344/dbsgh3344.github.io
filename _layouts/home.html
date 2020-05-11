@@ -56,33 +56,74 @@ layout: default
       </li>
     {%- endfor -%} -->
     <h1 id="home-title-text">Portpolio</h1>
-    <li>
-          <h2 class="post-title">Multi Labeling</h2>
-        </a>
-        <div class="post-meta">
-          <ul class="post-categories"><li>Python</li><li>Neural Network</li><li>Multi label Classification</li></ul>
-        </div>
-        <div><p>Auto Labeling은 레이블이 되어있지 않은 데이터에 레이블링을 해주는 기법입니다.</p>
-          <p>소수의 데이터에 직접 레이블링을 해주고 기본 Multi Layer Perceptron Model을 만들어서 다수의 데이터를 학습시켰습니다.  </p>
-          <p>이 과정에서 하나의 레이블이 아닌 복수의 레이블을 할당할 수 있는 Multi Label Classification을 사용하였습니다. </p>
-        </div>
-        <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/multi_label_classification.ipynb" target="_blank">Multi Label github</a>
+    <h2 id="project-title-text">AI-Coverletter-Assistant</h2>
+    <div><p>AI-Coverletter-Assistant 프로젝트는 Coverletter 작성에 도움을 줄 서비스를 제공합니다. </p>
+      <p>NLP 기술을 이용한 문장생성, 유의어 추천, 제목요약 등의 서비스를 제공하여 Coverletter 작성시간을 
+        단축시키는 데 초점을 두었습니다. </p>
+  
+      </div>
 
+      <div>
+      <h3>used tech</h3>
+      <div id="project-rectangle">
+
+  
+      <li>
+          <h3 class="post-title">Crawling</h3>
+        
+        <div class="post-meta">
+          <ul class="post-categories"><li>Python</li><li>Multi Thread</li></ul>
+        </div>
+        <div><p>Coverletter 데이터 수집에 사용된 crawling 기술입니다.</p>
+          <p>대량의 데이터를 Crawling 하면서 시간단축을 위해 Thread 기법을 사용하였습니다.</p>
+          <p>다중 for문이 사용되는 구간에 다중 thread를 접목해서 시간을 단축시켰습니다. </p>
+        </div>
+        <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Utils/crawling.py" target="_blank">Multi Thread py script github</a>
+  
+      </li>
+  
+      <li>
+            <h3 class="post-title">Multi Labeling</h3>
+          
+          <div class="post-meta">
+            <ul class="post-categories"><li>Python</li><li>Neural Network</li><li>Multi label Classification</li></ul>
+          </div>
+          <div><p>Auto Labeling은 레이블이 되어있지 않은 데이터에 레이블링을 해주는 기법입니다.</p>
+            <p>소수의 데이터에 직접 레이블링을 해주고 기본 Multi Layer Perceptron Model을 만들어서 다수의 데이터를 학습시켰습니다.  </p>
+            <p>이 과정에서 하나의 레이블이 아닌 복수의 레이블을 할당할 수 있는 Multi Label Classification을 사용하였습니다. </p>
+          </div>
+          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/multi_label_classification.ipynb" target="_blank">Multi Label github</a>
+  
+        </li>
+        <li>
+          <h3 class="post-title">Text Generation</h3>
+        
+        <div class="post-meta">
+          <ul class="post-categories"><li>Long Short-Term Memory</li><li>Sparse Cross Entropy</li></ul>
+        </div>
+        <div><p>Coverletter 작성 중, 자주 사용되는 조사, 관용어구를 자동완성 시켜주는 기능입니다.</p>
+          <p>LSTM을 사용하여 sequence text data modeling 성능을 향상시켰습니다.</p>
+          <p>Out-Of-Memory 문제에 대해 Sparse Cross Entropy를 사용하여 memory use를 감소시켰습니다.</p>
+        </div>
+        <a href="" target="_blank">Text Generation Model github</a>
+  
       </li>
       <li>
-        <h2 class="post-title">Crawling</h2>
-      </a>
+        <h3 class="post-title">Summerization</h3>
+      
       <div class="post-meta">
-        <ul class="post-categories"><li>Python</li><li>Multi Thread</li></ul>
+        <ul class="post-categories"><li>Sequence To Sequence</li><li>Hangul Romanize</li></ul>
       </div>
-      <div><p>원하는 데이터가 있다면 직접 수집할 수 있어야 합니다. 데이터 수집을 위해 Crawling을 공부하였습니다.</p>
-        <p>대량의 데이터를 Crawling하다보면 오랜 시간이 걸릴 수 있습니다. 시간단축을 위해 Thread 기법을 사용하였습니다.</p>
-        <p>Crawling하면서 다중 for문을 사용해야 하는 구간에 다중 thread를 접목해서 시간을 대폭 단축시켰습니다. </p>
+      <div><p></p>
+        <p></p>
+        <p></p>
       </div>
-      <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Utils/crawling.py" target="_blank">Multi Thread py script</a>
-
+      <a href="" target="_blank">Text Generation Model github</a>
+  
     </li>
-
+  
+    </div>
+  </div>
 
 
 

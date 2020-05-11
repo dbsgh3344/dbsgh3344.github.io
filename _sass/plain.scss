@@ -206,7 +206,7 @@ main {
   line-height: 1.2em;
   font-size: 28px;
   color: #0096c6;
-  color: #0096c6;
+  // color: #0096c6;
 }
 .posts,
 .post-container {
@@ -276,4 +276,18 @@ main {
    margin-bottom: 5%;
    padding-bottom: 10px;
   }
+
+  #project-title-text {
+    font-size: 35px; 
+    color : #213744; 
+    //  border-bottom: 1px solid #222222; 
+    //  margin-bottom: 5%;
+    //  padding-bottom: 10px;
+    }
+
+    #project-rectangle {
+      border: 1px solid;
+      padding: 10px;
+  }
+  
 
