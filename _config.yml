@@ -1,6 +1,6 @@
 title: Song Portpolio
 author: Song Yunho
-email: dbsgh3344@naver.com
+email: dbsgh3322@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
   song yunho portpolio
 show_excerpts: true # set to true to show excerpts on the homepage
@@ -16,7 +16,9 @@ plainwhite:
 
   # generate social links in footer
   social_links:
-    github:  dbsgh3344
+    github:  dbsgh3344 
+    notion:  Song-Portpolio-a3ee6c3060f14b95802b13c7cf747740
+
     
     rss: rss
     # dribbble: jekyll

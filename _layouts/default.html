@@ -6,7 +6,7 @@
   <body>
     <main class="container">
       <section class="about">
-        <!-- <a href="/"><img src="{{  | relative_url }}" alt="{{ site.plainwhite.name }}"></a> -->
+        <a href="/"><img src="{{  | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
         <h2 id="title">
           <a href="/">{{ site.plainwhite.name }}</a>
         </h2>
@@ -72,6 +72,13 @@
             <a href="https://flickr.com/{{ site.plainwhite.social_links.flickr }}">
               <li>
                 <i class="icon-flickr"></i>
+              </li>
+            </a>
+          {%- endif -%}
+          {%- if site.plainwhite.social_links.notion -%}
+            <a href="https://www.notion.so/{{ site.plainwhite.social_links.notion }}">
+              <li>
+                <i class="icon-sticky-note"></i>
               </li>
             </a>
           {%- endif -%}
