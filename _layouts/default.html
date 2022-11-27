@@ -6,9 +6,9 @@
   <body>
     <main class="container">
       <section class="about">
-        <a href="/"><img src="{{  | relative_url }}" alt="{{ site.plainwhite.name }}"></a>
+        <a href="/"><img src="https://user-images.githubusercontent.com/29767578/204120030-5ee09606-3be3-4c18-9626-b203c6b73e93.png" alt="{{ absolute }}"></a>
         <h2 id="title">
-          <a href="/">{{ site.plainwhite.name }}</a>
+          <div>{{ site.plainwhite.name }}</div>
         </h2>
         <p class="tagline">{{ site.plainwhite.tagline }}</p>
         <ul class="social">
@@ -78,10 +78,12 @@
           {%- if site.plainwhite.social_links.notion -%}
             <a href="https://www.notion.so/{{ site.plainwhite.social_links.notion }}">
               <li>
-                <i class="icon-sticky-note"></i>
-              </li>
+                <i class="icon-address-card"></i>
+                <!-- <i class="ico"></i> -->
+              </li>  
             </a>
           {%- endif -%}
+          
         </ul>
         {%- if site.plainwhite.navigation -%}
           <nav class="navigation">
