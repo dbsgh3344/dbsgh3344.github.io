@@ -8,7 +8,10 @@
       <section class="about">
         <a href="/"><img src="https://user-images.githubusercontent.com/29767578/204530884-d4a61e09-d65c-4e1c-b016-096f57c0ddfb.jpg" alt="{{ absolute }}" width="200" height="200"></a>
         <h2 id="title">
-          <div>{{ site.plainwhite.name }}</div>
+          <div>
+            <p>{{ site.plainwhite.name }}</p>
+          </div>
+          <!-- <div>{{ site.plainwhite.email }}</div> -->
         </h2>
         <div>
           <p id="about-text">Data Engineer 송윤호입니다.</p>
@@ -17,7 +20,7 @@
         <p class="tagline">{{ site.plainwhite.tagline }}</p>
         <ul class="social">
           {%- if site.plainwhite.social_links.github -%}
-            <a href="https://github.com/{{ site.plainwhite.social_links.github }}">
+            <a href="https://github.com/{{ site.plainwhite.social_links.github }}" target="_blank">
               <li>
                 <i class="icon-github-circled"></i>
               </li>
@@ -80,15 +83,17 @@
             </a>
           {%- endif -%}
           {%- if site.plainwhite.social_links.notion -%}
-            <a href="https://www.notion.so/{{ site.plainwhite.social_links.notion }}">
+            <a href="https://www.notion.so/{{ site.plainwhite.social_links.notion }}" target="_blank">
               <li>
                 <i class="icon-address-card"></i>
                 <!-- <i class="ico"></i> -->
               </li>  
             </a>
           {%- endif -%}
-          
         </ul>
+        <div>
+          <p>{{ site.plainwhite.email }}</p>
+        </div>
         {%- if site.plainwhite.navigation -%}
           <nav class="navigation">
             <ul>

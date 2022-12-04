@@ -11,13 +11,14 @@ sass:
   sass_dir: _sass
 plainwhite:
   name: Song Yunho
+  email: dbsgh3322@gmail.com
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
 
   # generate social links in footer
   social_links:
     github:  dbsgh3344 
-    notion:  Song-Portpolio-a3ee6c3060f14b95802b13c7cf747740
+    notion:  https://pouncing-bramble-fd4.notion.site/Song-Portpolio-a3ee6c3060f14b95802b13c7cf747740
 
     
     rss: rss

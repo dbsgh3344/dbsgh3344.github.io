@@ -13,10 +13,22 @@ layout: default
   <div>
   <!-- my about 쓰는 곳 -->
     <h1 id="home-title-text">About</h1>
-    <h1 id="about-text" >Data Engineer 송윤호입니다.</h1> 
-    <h1 id="about-text">factory내의 machine 데이터 추출에서부터 DB적재 및 분석까지의 업무를 수행하고 있습니다.</h1>
-    <h1 id="about-text">데이터 인프라 구축과 데이터 분석에 관심이 많습니다.</h1>
+    <p id="about-text" >Data Engineer 송윤호입니다.</p> 
+    <p id="about-text">factory내의 machine 데이터 추출에서부터 DB적재 및 분석까지의 업무를 수행하고 있습니다.</p>
+    <p id="about-text">데이터 인프라 구축과 데이터 분석에 관심이 많습니다.</p>
   <!-- <h1 id = 'about-text'> </h1>  -->
+  </div>
+
+  <div>
+    <h1 id="home-title-text">Career</h1>
+
+    <p id="about-text">Advanced Technology Inc</p>
+    <ul>
+      <li id="about-text">SW Engineer (2021.01~2021.12)</li>
+      <li id="about-text">SW Engineer & DataEngineer (2022.12~)</li>
+    </ul>
+    
+
   </div>
 
   <div>
@@ -25,7 +37,7 @@ layout: default
     <h2 id="about-text">- Python</h2>
     <h2 id="about-text">- C#</h2>
     <h2>Database</h2>
-    <h2 id="about-text">- NoSql</h2>
+    <h2 id="about-text">- MongoDB</h2>
     <h2 id="about-text">- MySql</h2>
     <h2>DeepLearning</h2>
     <h2 id="about-text">- NLP</h2> 
@@ -87,7 +99,7 @@ layout: default
             <p>대량의 데이터를 Crawling 하면서 시간단축을 위해 Thread 기법을 사용하였습니다.</p>
             <p>다중 for문이 사용되는 구간에 다중 thread를 접목해서 시간을 단축시켰습니다. </p>
           </div>
-          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Utils/crawling.py" target="_blank">Multi Thread py script github</a>
+          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Utils/crawling.py" target="_blank">source code</a>
     
         </li>
     
@@ -101,7 +113,7 @@ layout: default
               <p>소수의 데이터에 직접 레이블링을 해주고 기본 Multi Layer Perceptron Model을 만들어서 다수의 데이터를 학습시켰습니다.  </p>
               <p>이 과정에서 하나의 레이블이 아닌 복수의 레이블을 할당할 수 있는 Multi Label Classification을 사용하였습니다. </p>
             </div>
-            <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/multi_label_classification.ipynb" target="_blank">Multi Label github</a>
+            <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/multi_label_classification.ipynb" target="_blank">source code</a>
     
           </li>
           <li>
@@ -114,7 +126,7 @@ layout: default
             <p>LSTM을 사용하여 sequence text data 처리성능을 향상시켰습니다.</p>
             <p>Out-Of-Memory 문제에 대해 Sparse Cross Entropy를 사용하여 memory use를 감소시켰습니다.</p>
           </div>
-          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/tree/fromzero/Models" target="_blank">Text Generation Model github</a>
+          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/tree/fromzero/Models" target="_blank">source code</a>
     
         </li>
         <li>
@@ -127,7 +139,7 @@ layout: default
           <p>한글은 글자의 다양성으로 인해 Out-Of-Memory에 자주 직면합니다. 이를 해결하기 위해 한글 Romanize 기능을 사용하여 memory use를 감소시켰습니다.</p>
           <p></p>
         </div>
-        <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/text_summerization.ipynb" target="_blank">Summarization Model github</a>
+        <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/text_summerization.ipynb" target="_blank">source code</a>
     
       </li>
     
@@ -139,6 +151,10 @@ layout: default
     <p>Machine에서 발생되는 데이터의 특성을 고려하여 DB를 설계했습니다.</p>
     <p>기존의 One Table방식의 MySql에서 NoSql로 DB를 전환하며 데이터 검색속도를 향상시켰습니다.</p>
   </div>
+  <li>
+    <a href="https://pouncing-bramble-fd4.notion.site/NoSql-Modeling-d774ad8a1ddf4fa9b3306b48f55f3059" target="_blank">세부내용</a>
+  </li>
+  
 
 </ul>
 
