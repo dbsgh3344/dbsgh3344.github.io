@@ -2,11 +2,21 @@
 <html lang="en">
   <head>
     {%- include head.html -%}
+    <script>
+      function toggleImage() {
+        var image = document.getElementById("myImage");
+        if (image.style.display === "none") {
+          image.style.display = "block";
+        } else {
+          image.style.display = "none";
+        }
+      }
+    </script>
   </head>
   <body>
     <main class="container">
       <section class="about">
-        <a href="/"><img src="https://user-images.githubusercontent.com/29767578/204530884-d4a61e09-d65c-4e1c-b016-096f57c0ddfb.jpg" alt="{{ absolute }}" width="200" height="200"></a>
+        <!-- <a href="/"><img src="https://user-images.githubusercontent.com/29767578/204530884-d4a61e09-d65c-4e1c-b016-096f57c0ddfb.jpg" alt="{{ absolute }}" width="200" height="200"></a> -->
         <h2 id="title">
           <div>
             <p>{{ site.plainwhite.name }}</p>

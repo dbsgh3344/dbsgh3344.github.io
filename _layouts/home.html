@@ -21,14 +21,11 @@ layout: default
 
   <div>
     <h1 id="home-title-text">Career</h1>
-
     <p id="about-text">Advanced Technology Inc</p>
     <ul>
       <li id="about-text">SW Engineer (2021.01~2021.12)</li>
       <li id="about-text">SW Engineer & DataEngineer (2022.12~)</li>
     </ul>
-    
-
   </div>
 
   <div>
@@ -36,9 +33,11 @@ layout: default
     <h2>Language</h2>
     <h2 id="about-text">- Python</h2>
     <h2 id="about-text">- C#</h2>
-    <h2>Database</h2>
+    <h2>DataEngineering Stack</h2>
     <h2 id="about-text">- MongoDB</h2>
     <h2 id="about-text">- MySql</h2>
+    <h2 id="about-text">- Airflow</h2>
+    <h2 id="about-text">- GCP</h2>
     <h2>DeepLearning</h2>
     <h2 id="about-text">- NLP</h2> 
     <h2>etc</h2>
@@ -48,6 +47,7 @@ layout: default
     <h1 id="home-title-text">Etc</h1>
     <p id="about-text">멀티캠퍼스 NLP 기반 데이터 분석 교육 최우수상 (2019.08~2019.12)</p>
     <p id="about-text">가짜연구소 5기 펠로우쉽 Data-Engineer과정 수료 (2022.08~2023.01)</p>
+    <p id="about-text">가짜연구소 6기 DataEngineering Study (2023.04~)</p>
   </div>
 
 </ul>  
@@ -94,58 +94,50 @@ layout: default
         <h3>Used Tech</h3>
         <div id="project-rectangle">
         <li>
-          <h3 class="post-title">Crawling</h3>
-          
+          <h3 class="post-title">Crawling</h3>          
           <div class="post-meta">
             <ul class="post-categories"><li>Python</li><li>Multi Thread</li></ul>
           </div>
           <div>
-            <p>Coverletter 데이터 수집에 사용된 crawling 기술입니다.</p>
-            <p>대량의 데이터를 Crawling 하면서 시간단축을 위해 Thread 기법을 사용하였습니다.</p>
-            <p>다중 for문이 사용되는 구간에 다중 thread를 접목해서 시간을 단축시켰습니다. </p>
+            <p>사람인,잡코리아 등을 통해 Coverletter 데이터 수집</p>
+            <p>대량의 데이터 Crawling 위해 Multi Processing 사용</p>
           </div>
-          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Utils/crawling.py" target="_blank">source code</a>
-    
+          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Utils/crawling.py" target="_blank" class="link">source code</a>
         </li>
-    
         <li>
-              <h3 class="post-title">Auto Labeling</h3>
-            
-            <div class="post-meta">
-              <ul class="post-categories"><li>Python</li><li>Neural Network</li><li>Multi label Classification</li></ul>
-            </div>
-            <div><p>Auto Labeling은 레이블이 되어있지 않은 데이터에 레이블링을 해주는 기법입니다.</p>
-              <p>소수의 데이터에 직접 레이블링을 해주고 기본 Multi Layer Perceptron Model을 만들어서 다수의 데이터를 학습시켰습니다.  </p>
-              <p>이 과정에서 하나의 레이블이 아닌 복수의 레이블을 할당할 수 있는 Multi Label Classification을 사용하였습니다. </p>
-            </div>
-            <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/multi_label_classification.ipynb" target="_blank">source code</a>
-    
-          </li>
-          <li>
-            <h3 class="post-title">Text Generation</h3>
-          
+          <h3 class="post-title">Auto Labeling</h3>            
+          <div class="post-meta">
+            <ul class="post-categories"><li>Python</li><li>Neural Network</li><li>Multi label Classification</li></ul>
+          </div>
+          <div>
+            <p>소수의 데이터에 직접 레이블링 후 Multi Layer Perceptron Model을 통해 다수의 데이터를 학습</p>
+            <p>하나의 레이블이 아닌 복수의 레이블을 할당할 수 있는 Multi Label Classification을 사용</p>
+          </div>
+          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/multi_label_classification.ipynb" target="_blank" class="link">source code</a>
+        </li>
+        <li>
+          <h3 class="post-title">Text Generation</h3>
           <div class="post-meta">
             <ul class="post-categories"><li>Long Short-Term Memory</li><li>Sparse Cross Entropy</li></ul>
           </div>
-          <div><p>Coverletter 작성 중, 자주 사용되는 조사, 관용어구를 자동완성 시켜주는 기능입니다.</p>
-            <p>LSTM을 사용하여 sequence text data 처리성능을 향상시켰습니다.</p>
-            <p>Out-Of-Memory 문제에 대해 Sparse Cross Entropy를 사용하여 memory use를 감소시켰습니다.</p>
+          <div>
+            <p>Coverletter 작성 중, 자주 사용되는 조사, 관용어구 자동완성 기능</p>
+            <p>LSTM 사용하여 sequence text data 처리성능 향상</p>
+            <p>Sparse Cross Entropy를 사용하여 Out-Of-Memory 문제 개선</p>
           </div>
-          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/tree/fromzero/Models" target="_blank">source code</a>
-    
+          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/tree/fromzero/Models" target="_blank" class="link">source code</a>
         </li>
         <li>
           <h3 class="post-title">Summerization</h3>
-        
-        <div class="post-meta">
-          <ul class="post-categories"><li>Sequence To Sequence</li><li>Hangul Romanize</li></ul>
-        </div>
-        <div><p>Coverletter를 한 문장으로 표현할 수 있도록 요약하는 기능입니다.</p>
-          <p>한글은 글자의 다양성으로 인해 Out-Of-Memory에 자주 직면합니다. 이를 해결하기 위해 한글 Romanize 기능을 사용하여 memory use를 감소시켰습니다.</p>
-          <p></p>
-        </div>
-        <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/text_summerization.ipynb" target="_blank">source code</a>
-      </li>
+          <div class="post-meta">
+            <ul class="post-categories"><li>Sequence To Sequence</li><li>Hangul Romanize</li></ul>
+          </div>
+          <div>
+            <p>Coverletter 한 문장 요약 기능</p>
+            <p>한글의 글자 다양성으로 인한 Out-Of-Memory 이슈를 한글 Romanize 기능을 통해 개선</p>
+          </div>
+          <a href="https://github.com/dbsgh3344/AI-Coverletter-Assistant/blob/fromzero/Models/text_summerization.ipynb" target="_blank" class="link">source code</a>
+        </li>
       </div>
     </div>
   </details>
@@ -157,73 +149,120 @@ layout: default
   <details id="details-text">
     <div style="padding: 15px;">
       <h3>Used Tech</h3>
-        <div id="project-rectangle">
-          <li>
-            <h3 class="post-title">DB Architecture</h3>
-            <div class="post-meta">
-              <ul class="post-categories"><li>No Sql</li><li>Sql</li></ul>
-            </div>
-            <div>
-              <p>Machine에서 발생되는 데이터의 특성을 고려한 DB 설계</p>
-              <p>기존 Single Table방식 DB에서 NoSql로 DB를 전환 및 설계하며 데이터 검색속도 향상</p>
-            </div>
-            <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
-            <a href="https://drive.google.com/file/d/1fgNWaXS47rS-LZP9GvGIQvLYcI0WrdT7/view?usp=sharing" target="_blank">세부내용</a>
-          </li>
-          <li>
-            <h3 class="post-title">Apply AI In Machine</h3>
-            <div class="post-meta">
-              <ul class="post-categories"><li>C#</li></ul>
-            </div>
-            <div>
-              <p>AI - Machine 인프라 구축</p>
-              <p>Machine내 AI기반 과검 방지 및 검사속도 증가 기능 추가</p>
-            </div>
-            <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
-          </li>
-          <li>
-            <h3 class="post-title">Machine Data Extract</h3>
-            <div class="post-meta">
-              <ul class="post-categories"><li>C#</li><li>Data 수집</li></ul>
-            </div>
-            <div>
-              <p>Machine 검사시간, 불량 데이터 세부내용 등 데이터 분석에 활용될 정보 생성</p>
-              <p>AI 및 DB 적재를 위해 해당 데이터를 csv,json형식 파일로 추출</p>
-            </div>
-            <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
-          </li>
-          <li>
-            <h3 class="post-title">Realtime Data Storing</h3>
-            <div class="post-meta">
-              <ul class="post-categories"><li>Python Scripting</li></ul>
-            </div>
-            <div>
-              <p>Machine에서 발생되는 실시간 데이터 DB 적재 파이프라인 구축</p>
-            </div>
-            <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
-          </li>
-          <li>
-            <h3 class="post-title">Aggregation For Data Analysis</h3>
-            <div class="post-meta">
-              <ul class="post-categories"><li>Nosql Query</li><li>Realtime Aggregation</li></ul>
-            </div>
-            <div>
-              <p>데이터 분석을 위해 실시간 집계 쿼리 작성</p>
-              <p>Factory 실시간 모니터링에 나타낼 데이터의 지표,평균,분산 산출</p>
-              <p></p>
-            </div>
-            <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
-          </li>
-        </div>
+      <div id="project-rectangle">
+        <li>
+          <h3 class="post-title">DB Architecture</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>No Sql</li><li>Sql</li></ul>
+          </div>
+          <div>
+            <p>Machine에서 발생되는 데이터의 특성을 고려한 DB 설계</p>
+            <p>기존 Single Table방식 DB에서 NoSql로 DB를 전환 및 설계하며 데이터 검색속도 향상</p>
+          </div>
+          <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
+          <a href="https://drive.google.com/file/d/1fgNWaXS47rS-LZP9GvGIQvLYcI0WrdT7/view?usp=sharing" target="_blank" class="link">세부내용</a>
+        </li>
+        <li>
+          <h3 class="post-title">Apply AI In Machine</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>C#</li></ul>
+          </div>
+          <div>
+            <p>AI - Machine 인프라 구축</p>
+            <p>Machine내 AI기반 과검 방지 및 검사속도 증가 기능 추가</p>
+          </div>
+          <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
+        </li>
+        <li>
+          <h3 class="post-title">Machine Data Extract</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>C#</li><li>Data 수집</li></ul>
+          </div>
+          <div>
+            <p>Machine 검사시간, 불량 데이터 세부내용 등 데이터 분석에 활용될 정보 생성</p>
+            <p>AI 및 DB 적재를 위해 해당 데이터를 csv,json형식 파일로 추출</p>
+          </div>
+          <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
+        </li>
+        <li>
+          <h3 class="post-title">Realtime Data Storing</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>Python Scripting</li></ul>
+          </div>
+          <div>
+            <p>Machine에서 발생되는 실시간 데이터 DB 적재 파이프라인 구축</p>
+          </div>
+          <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
+        </li>
+        <li>
+          <h3 class="post-title">Aggregation For Data Analysis</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>Nosql Query</li><li>Realtime Aggregation</li></ul>
+          </div>
+          <div>
+            <p>데이터 분석을 위해 실시간 집계 쿼리 작성</p>
+            <p>Factory 실시간 모니터링에 나타낼 데이터의 지표,평균,분산 산출</p>
+            <p></p>
+          </div>
+          <!-- <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/a6640aa5-e757-42dc-97c4-9df0ddce0258/change_db.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230201%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230201T134802Z&X-Amz-Expires=86400&X-Amz-Signature=3d3e4c68f87acd627a2389741c28062573391fd5540c0d5611f852eaf4af14e4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22change_db.pdf%22&x-id=GetObject" target="_blank">세부내용</a> -->
+        </li>
+      </div>
     </div>
   </details>
-  <h2 id="project-title-text">Data Labeling</h2>
+  <!-- <h2 id="project-title-text">Data Labeling</h2>
   <div>
     <p>Open Source인 "Labelme" Program을 기반으로 사내 데이터 라벨링 프로그램 개발</p>
     <p>Data Labeling 편의기능 및 AI Train Data Format 변환 기능 등을 추가한 AI 파이프라인 구축</p>
-  </div>
-  <!-- <h2 id="project-title-text" ></h2>   -->
-  
+  </div> -->
+  <h2 id="project-title-text">Estate-Project</h2>
+  <div>
+    <p>데이터 파이프라인 구축 프로젝트</p>
+    <p>현 매물 현황 파악 및 분석</p>
+    <p>데이터 수집부터 빅쿼리 시각화까지 데이터 파이프라인 구축</p>
+  </div>  
+  <details id="details-text">
+    <div style="padding: 15px;">
+      <h3>Used Tech</h3>
+      <div id="project-rectangle">
+        <li>
+          <h3 class="post-title">Workflow 자동화</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>Airflow</li><li>ELT</li></ul>
+          </div>
+          <div>
+            <p>daily ELT Process 자동화</p>
+            <p>데이터 수집 ~ 집계까지 Process 설계</p>
+            <p>재실행시 중복없도록 멱등하게 설계</p>
+          </div>          
+          <!-- <a href="https://drive.google.com/file/d/1_R-e6gXpXHJzqczlH140DxgbeneKxl1A/view?usp=sharing" target="_blank" class="link">architecture</a> -->
+          <p class="click_toggle" onclick="toggleImage()">Detail architecture</p>          
+          <img id="myImage" src="https://github.com/dbsgh3344/gcp_estate_project/assets/29767578/cca9ac58-2aa1-441d-839b-a4bb050482e5" alt="no image" style="display:none ;">
+          <a href="https://github.com/dbsgh3344/gcp_estate_project/blob/master/dags/crawling_dag.py" target="_blank" class="link">source code</a>
+        </li>
+        <li>
+          <h3 class="post-title">Crawling</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>Python</li></ul>
+          </div>
+          <div>
+            <p>Naver 부동산 이용</p>
+            <p>아파트별 일일 매물량 크롤링</p>
+          </div>
+          <a href="https://github.com/dbsgh3344/gcp_estate_project/blob/master/extract_data/crawling_estates.py" target="_blank" class="link">source code</a>
+        </li>
+        <li>
+          <h3 class="post-title">Data 분석</h3>
+          <div class="post-meta">
+            <ul class="post-categories"><li>BigQuery</li><li>SQL</li><li>Looker Studio</li></ul>
+          </div>
+          <div>
+            <p>일일 데이터 매물량 집계 자동화</p>
+            <p>일일 부동산 매물량으로 데이터 마트 구성 후 Looker Studio 통한 시각화 Process 설계</p>
+          </div>
+        </li>
+      </div>
+    </div>
+  </details>
 
 </ul>
 
